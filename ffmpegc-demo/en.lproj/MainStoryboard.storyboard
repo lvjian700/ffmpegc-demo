@@ -1,23 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nb-Mb-yp8">
+                                <items>
+                                    <barButtonItem width="120" style="plain" systemItem="fixedSpace" id="t7p-r0-RUi"/>
+                                    <barButtonItem title="Play" id="mJL-5N-sny">
+                                        <connections>
+                                            <action selector="playClicked:" destination="2" id="mtP-TZ-c3a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJr-X8-iXF"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2h-eX-SDY">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jJr-X8-iXF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="D6W-hu-gen"/>
+                            <constraint firstAttribute="bottom" secondItem="v2h-eX-SDY" secondAttribute="bottom" constant="12" id="Jt7-3y-YLR"/>
+                            <constraint firstAttribute="trailing" secondItem="v2h-eX-SDY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LFU-px-f0C"/>
+                            <constraint firstItem="jJr-X8-iXF" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Mro-t9-OAV"/>
+                            <constraint firstItem="jJr-X8-iXF" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="O9J-Ib-lIg"/>
+                            <constraint firstItem="7nb-Mb-yp8" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Wyy-DR-uqO"/>
+                            <constraint firstItem="jJr-X8-iXF" firstAttribute="bottom" secondItem="7nb-Mb-yp8" secondAttribute="top" type="default" id="Yij-Pe-xBF"/>
+                            <constraint firstItem="7nb-Mb-yp8" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="h5N-Wa-0h1"/>
+                            <constraint firstItem="7nb-Mb-yp8" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="trg-GV-pYt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="v2h-eX-SDY" id="Wrn-IO-Nm8"/>
+                        <outlet property="playButton" destination="mJL-5N-sny" id="jlI-qO-HMK"/>
+                        <outlet property="videoView" destination="jJr-X8-iXF" id="m5V-4o-wBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="playClicked:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="videoView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

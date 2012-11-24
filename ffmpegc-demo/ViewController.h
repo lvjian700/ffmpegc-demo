@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoFrameExtractor.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+	float lastFrameTime;
+}
+
+@property(strong, nonatomic) IBOutlet UIImageView *videoView;
+@property(strong, nonatomic) IBOutlet UILabel *label;
+
+@property(strong, nonatomic) IBOutlet UIBarButtonItem *playButton;
+
+
+@property (nonatomic, strong) VideoFrameExtractor *video;
+
+-(IBAction)playClicked:(id)sender;
+
 
 @end

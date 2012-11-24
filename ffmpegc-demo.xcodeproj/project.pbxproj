@@ -18,6 +18,17 @@
 		931111F3165F4D2A001EAA18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 931111F2165F4D2A001EAA18 /* Default-568h@2x.png */; };
 		931111F6165F4D2A001EAA18 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931111F4165F4D2A001EAA18 /* MainStoryboard.storyboard */; };
 		931111F9165F4D2A001EAA18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931111F8165F4D2A001EAA18 /* ViewController.m */; };
+		93B3F1201660A3E3000165AD /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F11C1660A3E3000165AD /* Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93B3F1211660A3E3000165AD /* VideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F11E1660A3E3000165AD /* VideoFrameExtractor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93B3F1291660A44A000165AD /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1231660A44A000165AD /* libavcodec.a */; };
+		93B3F12A1660A44B000165AD /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1241660A44A000165AD /* libavdevice.a */; };
+		93B3F12B1660A44B000165AD /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1251660A44A000165AD /* libavfilter.a */; };
+		93B3F12C1660A44B000165AD /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1261660A44A000165AD /* libavformat.a */; };
+		93B3F12D1660A44B000165AD /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1271660A44A000165AD /* libavutil.a */; };
+		93B3F12E1660A44B000165AD /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1281660A44A000165AD /* libswscale.a */; };
+		93B3F1301660A473000165AD /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F12F1660A473000165AD /* libbz2.1.0.dylib */; };
+		93B3F1331660A483000165AD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1311660A47A000165AD /* libz.dylib */; };
+		93B3F1431660A795000165AD /* for_the_birds.avi in Resources */ = {isa = PBXBuildFile; fileRef = 93B3F1421660A795000165AD /* for_the_birds.avi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +48,19 @@
 		931111F5165F4D2A001EAA18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		931111F7165F4D2A001EAA18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		931111F8165F4D2A001EAA18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93B3F11B1660A3E3000165AD /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = iFrameExecutor/Utilities.h; sourceTree = "<group>"; };
+		93B3F11C1660A3E3000165AD /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = iFrameExecutor/Utilities.m; sourceTree = "<group>"; };
+		93B3F11D1660A3E3000165AD /* VideoFrameExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoFrameExtractor.h; path = iFrameExecutor/VideoFrameExtractor.h; sourceTree = "<group>"; };
+		93B3F11E1660A3E3000165AD /* VideoFrameExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoFrameExtractor.m; path = iFrameExecutor/VideoFrameExtractor.m; sourceTree = "<group>"; };
+		93B3F1231660A44A000165AD /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = libs/libavcodec.a; sourceTree = "<group>"; };
+		93B3F1241660A44A000165AD /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = libs/libavdevice.a; sourceTree = "<group>"; };
+		93B3F1251660A44A000165AD /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = libs/libavfilter.a; sourceTree = "<group>"; };
+		93B3F1261660A44A000165AD /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = libs/libavformat.a; sourceTree = "<group>"; };
+		93B3F1271660A44A000165AD /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
+		93B3F1281660A44A000165AD /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
+		93B3F12F1660A473000165AD /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		93B3F1311660A47A000165AD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		93B3F1421660A795000165AD /* for_the_birds.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; name = for_the_birds.avi; path = videos/for_the_birds.avi; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +68,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B3F1331660A483000165AD /* libz.dylib in Frameworks */,
+				93B3F1301660A473000165AD /* libbz2.1.0.dylib in Frameworks */,
 				931111DD165F4D2A001EAA18 /* UIKit.framework in Frameworks */,
 				931111DF165F4D2A001EAA18 /* Foundation.framework in Frameworks */,
 				931111E1165F4D2A001EAA18 /* CoreGraphics.framework in Frameworks */,
+				93B3F1291660A44A000165AD /* libavcodec.a in Frameworks */,
+				93B3F12A1660A44B000165AD /* libavdevice.a in Frameworks */,
+				93B3F12B1660A44B000165AD /* libavfilter.a in Frameworks */,
+				93B3F12C1660A44B000165AD /* libavformat.a in Frameworks */,
+				93B3F12D1660A44B000165AD /* libavutil.a in Frameworks */,
+				93B3F12E1660A44B000165AD /* libswscale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +88,8 @@
 		931111CD165F4D29001EAA18 = {
 			isa = PBXGroup;
 			children = (
+				93B3F1411660A657000165AD /* videos */,
+				93B3F1221660A434000165AD /* libs */,
 				931111E2165F4D2A001EAA18 /* ffmpegc-demo */,
 				931111DB165F4D2A001EAA18 /* Frameworks */,
 				931111D9165F4D2A001EAA18 /* Products */,
@@ -83,6 +117,7 @@
 		931111E2165F4D2A001EAA18 /* ffmpegc-demo */ = {
 			isa = PBXGroup;
 			children = (
+				93B3F1181660A35F000165AD /* iFrameExecutor */,
 				931111EB165F4D2A001EAA18 /* AppDelegate.h */,
 				931111EC165F4D2A001EAA18 /* AppDelegate.m */,
 				931111F4165F4D2A001EAA18 /* MainStoryboard.storyboard */,
@@ -105,6 +140,40 @@
 				931111F2165F4D2A001EAA18 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93B3F1181660A35F000165AD /* iFrameExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				93B3F11B1660A3E3000165AD /* Utilities.h */,
+				93B3F11C1660A3E3000165AD /* Utilities.m */,
+				93B3F11D1660A3E3000165AD /* VideoFrameExtractor.h */,
+				93B3F11E1660A3E3000165AD /* VideoFrameExtractor.m */,
+			);
+			name = iFrameExecutor;
+			sourceTree = "<group>";
+		};
+		93B3F1221660A434000165AD /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				93B3F1311660A47A000165AD /* libz.dylib */,
+				93B3F12F1660A473000165AD /* libbz2.1.0.dylib */,
+				93B3F1231660A44A000165AD /* libavcodec.a */,
+				93B3F1241660A44A000165AD /* libavdevice.a */,
+				93B3F1251660A44A000165AD /* libavfilter.a */,
+				93B3F1261660A44A000165AD /* libavformat.a */,
+				93B3F1271660A44A000165AD /* libavutil.a */,
+				93B3F1281660A44A000165AD /* libswscale.a */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		93B3F1411660A657000165AD /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				93B3F1421660A795000165AD /* for_the_birds.avi */,
+			);
+			name = videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +232,7 @@
 				931111F1165F4D2A001EAA18 /* Default@2x.png in Resources */,
 				931111F3165F4D2A001EAA18 /* Default-568h@2x.png in Resources */,
 				931111F6165F4D2A001EAA18 /* MainStoryboard.storyboard in Resources */,
+				93B3F1431660A795000165AD /* for_the_birds.avi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +246,8 @@
 				931111E9165F4D2A001EAA18 /* main.m in Sources */,
 				931111ED165F4D2A001EAA18 /* AppDelegate.m in Sources */,
 				931111F9165F4D2A001EAA18 /* ViewController.m in Sources */,
+				93B3F1201660A3E3000165AD /* Utilities.m in Sources */,
+				93B3F1211660A3E3000165AD /* VideoFrameExtractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +328,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ffmpegc-demo/ffmpegc-demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../openopen/ffmpeg\"";
 				INFOPLIST_FILE = "ffmpegc-demo/ffmpegc-demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,7 +344,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ffmpegc-demo/ffmpegc-demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../openopen/ffmpeg\"";
 				INFOPLIST_FILE = "ffmpegc-demo/ffmpegc-demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,6 +374,7 @@
 				931111FE165F4D2A001EAA18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
