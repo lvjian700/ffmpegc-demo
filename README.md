@@ -15,8 +15,7 @@ The origin ffmpeg demo is [iFrameExecutor](https://github.com/jayrparro/iFrameEx
 ---
 
 See:    
-[How use ffmpegc-demo](https://github.com/lvjian700/ffmpegc-demo/wiki/How-to-use-ffmpegc-demo)  
-
+[How use ffmpegc-demo](http://witcheryne.iteye.com/blog/1734706)
 
 
 
