@@ -19,7 +19,10 @@
 {
     [super viewDidLoad];
 	DLog(@"initialize VideoFrameExtractor...");
-	self.video = [[VideoFrameExtractor alloc] initWithVideo:[Utilities bundlePath:@"for_the_birds.avi"]];
+	NSString *videoPath = [Utilities bundlePath:@"for_the_birds.avi"];
+	NSLog(@"read video path: %@", videoPath);
+	
+	self.video = [[VideoFrameExtractor alloc] initWithVideo:videoPath];
 	DLog(@"success.");
 	
 	DLog(@"setting video exetractor size....");
