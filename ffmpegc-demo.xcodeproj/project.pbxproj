@@ -20,16 +20,17 @@
 		931111F9165F4D2A001EAA18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931111F8165F4D2A001EAA18 /* ViewController.m */; };
 		93B27916174775E50009E7DE /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B27915174775E50009E7DE /* libiconv.2.4.0.dylib */; };
 		93B27918174777E00009E7DE /* for_the_birds.avi in Resources */ = {isa = PBXBuildFile; fileRef = 93B27917174777E00009E7DE /* for_the_birds.avi */; };
-		93B2792D174797690009E7DE /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B27927174797690009E7DE /* libavcodec.a */; };
-		93B2792E174797690009E7DE /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B27928174797690009E7DE /* libavdevice.a */; };
-		93B2792F174797690009E7DE /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B27929174797690009E7DE /* libavfilter.a */; };
-		93B27930174797690009E7DE /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2792A174797690009E7DE /* libavformat.a */; };
-		93B27931174797690009E7DE /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2792B174797690009E7DE /* libavutil.a */; };
-		93B27932174797690009E7DE /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2792C174797690009E7DE /* libswscale.a */; };
 		93B3F1201660A3E3000165AD /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F11C1660A3E3000165AD /* Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		93B3F1211660A3E3000165AD /* VideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F11E1660A3E3000165AD /* VideoFrameExtractor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		93B3F1301660A473000165AD /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F12F1660A473000165AD /* libbz2.1.0.dylib */; };
 		93B3F1331660A483000165AD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3F1311660A47A000165AD /* libz.dylib */; };
+		93FBBFBA17507D71009285BB /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB417507D71009285BB /* libavcodec.a */; };
+		93FBBFBB17507D71009285BB /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB517507D71009285BB /* libavdevice.a */; };
+		93FBBFBC17507D71009285BB /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB617507D71009285BB /* libavfilter.a */; };
+		93FBBFBD17507D71009285BB /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB717507D71009285BB /* libavformat.a */; };
+		93FBBFBE17507D71009285BB /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB817507D71009285BB /* libavutil.a */; };
+		93FBBFBF17507D71009285BB /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFB917507D71009285BB /* libswscale.a */; };
+		93FBBFC117507DF7009285BB /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBBFC017507DF7009285BB /* libx264.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,18 +52,19 @@
 		931111F8165F4D2A001EAA18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93B27915174775E50009E7DE /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
 		93B27917174777E00009E7DE /* for_the_birds.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; name = for_the_birds.avi; path = videos/for_the_birds.avi; sourceTree = "<group>"; };
-		93B27927174797690009E7DE /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = libs/libavcodec.a; sourceTree = "<group>"; };
-		93B27928174797690009E7DE /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = libs/libavdevice.a; sourceTree = "<group>"; };
-		93B27929174797690009E7DE /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = libs/libavfilter.a; sourceTree = "<group>"; };
-		93B2792A174797690009E7DE /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = libs/libavformat.a; sourceTree = "<group>"; };
-		93B2792B174797690009E7DE /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
-		93B2792C174797690009E7DE /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
 		93B3F11B1660A3E3000165AD /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = iFrameExecutor/Utilities.h; sourceTree = "<group>"; };
 		93B3F11C1660A3E3000165AD /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = iFrameExecutor/Utilities.m; sourceTree = "<group>"; };
 		93B3F11D1660A3E3000165AD /* VideoFrameExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoFrameExtractor.h; path = iFrameExecutor/VideoFrameExtractor.h; sourceTree = "<group>"; };
 		93B3F11E1660A3E3000165AD /* VideoFrameExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoFrameExtractor.m; path = iFrameExecutor/VideoFrameExtractor.m; sourceTree = "<group>"; };
 		93B3F12F1660A473000165AD /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
 		93B3F1311660A47A000165AD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		93FBBFB417507D71009285BB /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = libs/libavcodec.a; sourceTree = "<group>"; };
+		93FBBFB517507D71009285BB /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = libs/libavdevice.a; sourceTree = "<group>"; };
+		93FBBFB617507D71009285BB /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = libs/libavfilter.a; sourceTree = "<group>"; };
+		93FBBFB717507D71009285BB /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = libs/libavformat.a; sourceTree = "<group>"; };
+		93FBBFB817507D71009285BB /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
+		93FBBFB917507D71009285BB /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
+		93FBBFC017507DF7009285BB /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = libs/libx264.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +78,13 @@
 				931111DD165F4D2A001EAA18 /* UIKit.framework in Frameworks */,
 				931111DF165F4D2A001EAA18 /* Foundation.framework in Frameworks */,
 				931111E1165F4D2A001EAA18 /* CoreGraphics.framework in Frameworks */,
-				93B2792D174797690009E7DE /* libavcodec.a in Frameworks */,
-				93B2792E174797690009E7DE /* libavdevice.a in Frameworks */,
-				93B2792F174797690009E7DE /* libavfilter.a in Frameworks */,
-				93B27930174797690009E7DE /* libavformat.a in Frameworks */,
-				93B27931174797690009E7DE /* libavutil.a in Frameworks */,
-				93B27932174797690009E7DE /* libswscale.a in Frameworks */,
+				93FBBFBA17507D71009285BB /* libavcodec.a in Frameworks */,
+				93FBBFBB17507D71009285BB /* libavdevice.a in Frameworks */,
+				93FBBFBC17507D71009285BB /* libavfilter.a in Frameworks */,
+				93FBBFBD17507D71009285BB /* libavformat.a in Frameworks */,
+				93FBBFBE17507D71009285BB /* libavutil.a in Frameworks */,
+				93FBBFBF17507D71009285BB /* libswscale.a in Frameworks */,
+				93FBBFC117507DF7009285BB /* libx264.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,12 +162,13 @@
 		93B3F1221660A434000165AD /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				93B27927174797690009E7DE /* libavcodec.a */,
-				93B27928174797690009E7DE /* libavdevice.a */,
-				93B27929174797690009E7DE /* libavfilter.a */,
-				93B2792A174797690009E7DE /* libavformat.a */,
-				93B2792B174797690009E7DE /* libavutil.a */,
-				93B2792C174797690009E7DE /* libswscale.a */,
+				93FBBFC017507DF7009285BB /* libx264.a */,
+				93FBBFB417507D71009285BB /* libavcodec.a */,
+				93FBBFB517507D71009285BB /* libavdevice.a */,
+				93FBBFB617507D71009285BB /* libavfilter.a */,
+				93FBBFB717507D71009285BB /* libavformat.a */,
+				93FBBFB817507D71009285BB /* libavutil.a */,
+				93FBBFB917507D71009285BB /* libswscale.a */,
 				93B27915174775E50009E7DE /* libiconv.2.4.0.dylib */,
 				93B3F1311660A47A000165AD /* libz.dylib */,
 				93B3F12F1660A473000165AD /* libbz2.1.0.dylib */,
@@ -332,7 +336,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ffmpegc-demo/ffmpegc-demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../openopen/ffmpeg\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../ffmpegc/ffmpeg-1.2.1\"",
+					"\"$(SRCROOT)/../ffmpegc/ffmpeg-1.2.1/x264\"",
+				);
 				INFOPLIST_FILE = "ffmpegc-demo/ffmpegc-demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,7 +355,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ffmpegc-demo/ffmpegc-demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../openopen/ffmpeg\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../ffmpegc/ffmpeg-1.2.1\"",
+					"\"$(SRCROOT)/../ffmpegc/ffmpeg-1.2.1/x264\"",
+				);
 				INFOPLIST_FILE = "ffmpegc-demo/ffmpegc-demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
